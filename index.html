@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gym</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" alt="My Gym Logo" href="/index.html">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="/fee.html">Packages</a></li>
+        <li><a href="/store.html">Stores</a></li>
+        <li><a href="/diet.html">Diet Plan</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/member.html">Member Login</a></li>
+        <li><a href="/admin.html">Admin Login</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to My Gym</h1>
+      <p>Get fit, have fun, and achieve your fitness goals with us.</p>
+      <a href="/signup.html" class="cta-btn">Sign Up</a>
+    </div>
+  </header>
+
+  <section id="classes">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="class-grid">
+        <div class="class-card">
+          <img src="images/yoga.jpg" alt="Yoga Class">
+          <h3>Yoga</h3>
+        </div>
+        <div class="class-card">
+          <img src="images/gym.jpeg" alt="Gym">
+          <h3>Gym</h3>
+        </div>
+        <div class="class-card">
+          <img src="images/zumba.jpg" alt="Zumba Class">
+          <h3>Zumba</h3>
+        </div>
+        <div class="class-card">
+          <img src="images/spin.jpg" alt="Spin Class">
+          <h3>Spin</h3>
+        </div>
+        <div class="class-card">
+          <img src="images/bootcamp.jpg" alt="Bootcamp Class">
+          <h3>Bootcamp</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainers" class="dark-bg">
+    <div class="container">
+      <h2>Our Trainers</h2>
+      <div class="trainer-grid">
+        <div class="trainer-card">
+          <img src="images/trainer1.jpg" alt="Trainer 1">
+          <h3>John Doe</h3>
+          <p>Specialties: Weightlifting, CrossFit</p>
+        </div>
+        <div class="trainer-card">
+          <img src="images/trainer2.jpg" alt="Trainer 2">
+          <h3>Jane Smith</h3>
+          <p>Specialties: Yoga, Pilates</p>
+        </div>
+        <div class="trainer-card">
+          <img src="images/trainer3.jpg" alt="Trainer 3">
+          <h3>Mike Johnson</h3>
+          <p>Specialties: Cardio, HIIT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+        <p>Welcome to My Gym, your ultimate fitness destination. We are committed to helping you achieve your fitness goals and lead a healthy lifestyle. With state-of-the-art facilities and a team of experienced trainers, we provide a supportive and motivating environment for individuals of all fitness levels.</p>
+
+        <p>At My Gym, we believe that fitness is not just about physical strength, but also about mental well-being. Our holistic approach combines various fitness disciplines, including cardio, strength training, group classes, and personal training, to ensure a well-rounded fitness experience.</p>
+
+        <p>Our dedicated team of certified trainers is here to guide and support you throughout your fitness journey. Whether you are a beginner looking to get started or an advanced athlete seeking new challenges, we offer personalized training programs tailored to your specific needs and goals.</p>
+
+        <p>In addition to our top-notch facilities and expert guidance, we foster a community atmosphere where members can connect, inspire each other, and share their fitness achievements. We organize regular events, workshops, and challenges to keep you motivated and engaged.</p>
+
+        <p>Join My Gym today and embark on a transformative fitness journey. Experience the positive impact of regular exercise, make new friends, and embrace a healthier lifestyle. We are here to help you every step of the way.</p>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 My Gym. All rights reserved.</p>
+      <script>
+        // JavaScript code to display current date and time
+        var currentDate = new Date();
+        var formattedDate = currentDate.toDateString();
+        var currentTime = currentDate.toLocaleTimeString();
+  
+        var footer = document.querySelector("footer");
+        var dateTime = document.createElement("p");
+        dateTime.textContent = "Current Date: " + formattedDate + " | Current Time: " + currentTime;
+        footer.appendChild(dateTime);
+      </script>
+    </div>
+  </footer>
+</body>
+</html>

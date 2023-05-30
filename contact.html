@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header>
+    <h1>My Gym</h1>
+    <h4><a href="index.html">Home</a></h4>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="submit.php" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+  
+  
+<section id="contact" class="dark-bg">
+    <div class="container">
+      <p>Address: 123  Street, City, State, 123456</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Email: info@mygym.com</p>
+    </div>
+</section>
+    </div>
+  </section>
+  
+
+  <script>
+    // JavaScript code for form validation
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      var nameInput = document.getElementById("name");
+      var emailInput = document.getElementById("email");
+      var messageInput = document.getElementById("message");
+
+      if (nameInput.value.trim() === "" || emailInput.value.trim() === "" || messageInput.value.trim() === "") {
+        event.preventDefault();
+        alert("Please fill out all the fields.");
+      }
+    });
+  </script>
+</body>
+</html>
